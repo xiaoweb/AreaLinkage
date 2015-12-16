@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="areaData.js"></script>
+    <script type="text/javascript" src="area.js"></script>
+</head>
+<body>
+<form id="test" style="margin:50px auto;width: 500px;">
+    <select type="text" class="province">
+        <option disabled>
+            请选择
+        </option>
+    </select>
+    <select type="text" class="city" >
+        <option disabled>
+            请选择
+        </option>
+    </select>
+    <select type="text" class="county" >
+        <option>
+            请选择
+        </option>
+    </select>
+</form>
+<form id="test2" style="margin:50px auto;width: 500px;">
+    <select type="text" class="province">
+        <option disabled>
+            请选择
+        </option>
+    </select>
+    <select type="text" class="city" >
+        <option disabled>
+            请选择
+        </option>
+    </select>
+    <select type="text" class="county" >
+        <option>
+            请选择
+        </option>
+    </select>
+</form>
+<script type="text/javascript">
+    $('#test').area({})
+
+    $('#test2').area({
+        province:"安徽省",
+        city:"阜阳市",
+        county:"颍上县"
+    })
+</script>
+</body>
+</html>
